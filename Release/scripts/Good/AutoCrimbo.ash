@@ -16,10 +16,6 @@ void main()
 	if ((my_adventures() < 1) || (my_inebriety() > inebriety_limit()))
 		abort("Either too drunk or no adventures left...");
 
-	//set_choice(1486, 2, "Crimbo Choice 1486");
-	//set_choice(1487, 1, "Crimbo Choice 1487");
-	//set_choice(1488, 1, "Crimbo Choice 1488");
-
 	// Making sure our pre-adventure and post-adventure settings are empty
 	set_property("afterAdventureScript", "");
 	set_property("betweenBattleScript", "");
@@ -29,9 +25,8 @@ void main()
 	set_property("customCombatScript","Crimbo.ccs");
 
 	print("Swapping our equipment", 'blue');
-	cli_execute("maximize item, +equip lucky gold ring, +equip combat lover's locket, +equip rake, -tie");
-	//cli_execute("maximize item, +equip lucky gold ring, +equip combat lover's locket, +equip rake, +equip Elf Guard patrol cap, +equip Elf Guard hotpants, +equip Elf Guard insignia (private), -tie");
-	//cli_execute("maximize item, +equip lucky gold ring, +equip combat lover's locket, +equip rake, +equip Crimbuccaneer tricorn, +equip Crimbuccaneer breeches, +equip Crimbuccaneer fledges (mint), -tie");
+	cli_execute("maximize item, +equip lucky gold ring, +equip combat lover's locket, +equip rake, +equip Elf Guard patrol cap, +equip Elf Guard hotpants, +equip Elf Guard insignia (private), +equip Crimbuccaneer lantern, -tie");
+	//cli_execute("maximize item, +equip lucky gold ring, +equip combat lover's locket, +equip rake, +equip Crimbuccaneer tricorn, +equip Crimbuccaneer breeches, +equip Crimbuccaneer fledges (mint), +equip Crimbuccaneer lantern, -tie");
 
 	//if (!outfit("Crimbo")) print("Failed equip 'Crimbo'.", "red");
 	//use_familiar($familiar[Yule Hound]);
@@ -42,7 +37,7 @@ void main()
 		call_script("synthesis * item");
 	}
 
-	while (my_adventures() > 2) {
+	while (my_adventures() > 202) {
 		maintainBuffs();
 
 		if (have_effect($effect[Beaten Up]) > 0) {
@@ -64,7 +59,7 @@ void main()
 
 		//boolean retval = adv1($location[The Canadian Wildlife Preserve], -1, "");
 
-		buffer page_text = visit_url("adventure.php?snarfblat=576");
+		buffer page_text = visit_url("adventure.php?snarfblat=575");
 		run_turn();
 	}
 	cleanup();

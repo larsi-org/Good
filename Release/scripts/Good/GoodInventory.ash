@@ -7,7 +7,7 @@ void smash_barrels()
 
 void use_all_junk()
 {
-	boolean [item] junk = $items[ancient vinyl coin purse, black pension check, briefcase, duct tape wallet, fat wallet, fisherman's sack, Gathered Meat-Clip, gold Boozehounds Anonymous token, Mer-kin foodbucket, Mer-kin thingpouch, old coin purse, old leather wallet, pixel coin, pixellated moneybag, roll of meat, sack lunch, shiny stones, solid gold jewel, stolen meatpouch, mermaid's purse];
+	boolean [item] junk = $items[Crimbuccaneer captain's purse, ancient vinyl coin purse, black pension check, briefcase, duct tape wallet, fat wallet, fisherman's sack, Gathered Meat-Clip, gold Boozehounds Anonymous token, Mer-kin foodbucket, Mer-kin thingpouch, old coin purse, old leather wallet, pixel coin, pixellated moneybag, roll of meat, sack lunch, shiny stones, solid gold jewel, stolen meatpouch, mermaid's purse];
 
 	foreach it in junk use_all_but(0, it);
 }

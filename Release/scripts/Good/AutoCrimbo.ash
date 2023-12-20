@@ -25,8 +25,8 @@ void main()
 	set_property("customCombatScript","Crimbo.ccs");
 
 	print("Swapping our equipment", 'blue');
-	cli_execute("maximize item, +equip lucky gold ring, +equip combat lover's locket, +equip rake, +equip Elf Guard patrol cap, +equip Elf Guard hotpants, +equip Elf Guard insignia (private), +equip Crimbuccaneer lantern, -tie");
-	//cli_execute("maximize item, +equip lucky gold ring, +equip combat lover's locket, +equip rake, +equip Crimbuccaneer tricorn, +equip Crimbuccaneer breeches, +equip Crimbuccaneer fledges (mint), +equip Crimbuccaneer lantern, -tie");
+	cli_execute("maximize item, +equip lucky gold ring, +equip combat lover's locket, +equip Elf Guard patrol cap, +equip Elf Guard hotpants, +equip Elf Guard insignia (private), +equip Crimbuccaneer lantern, -tie");
+	//cli_execute("maximize item, +equip lucky gold ring, +equip combat lover's locket, +equip Crimbuccaneer tricorn, +equip Crimbuccaneer breeches, +equip Crimbuccaneer fledges (mint), +equip Crimbuccaneer lantern, -tie");
 
 	//if (!outfit("Crimbo")) print("Failed equip 'Crimbo'.", "red");
 	//use_familiar($familiar[Yule Hound]);

@@ -37,7 +37,7 @@ void main()
 		call_script("synthesis * item");
 	}
 
-	while (my_adventures() > 202) {
+	while (my_adventures() > 192) {
 		maintainBuffs();
 
 		if (have_effect($effect[Beaten Up]) > 0) {
@@ -59,7 +59,7 @@ void main()
 
 		//boolean retval = adv1($location[The Canadian Wildlife Preserve], -1, "");
 
-		buffer page_text = visit_url("adventure.php?snarfblat=575");
+		buffer page_text = visit_url("adventure.php?snarfblat=579");
 		run_turn();
 	}
 	cleanup();

@@ -155,10 +155,10 @@ void doTunnel()
 
 void main()
 {
-	if (isFarming()) {
-		call_script("cc_snapshot");
-		call_script("PL-skills");
-	}
+	//if (isFarming()) {
+	//	call_script("cc_snapshot");
+	//	call_script("PL-skills");
+	//}
 
 	call_script("Detective Solver");
 

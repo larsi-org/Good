@@ -153,12 +153,19 @@ void doTunnel()
 	if (item_amount(it) > 0) use(1, it); // use a second one, if available
 }
 
+void setDefaultChoices()
+{
+	set_choice(1108, 2, "1108");
+}
+
 void main()
 {
 	//if (isFarming()) {
 	//	call_script("cc_snapshot");
 	//	call_script("PL-skills");
 	//}
+
+	setDefaultChoices()
 
 	call_script("Detective Solver");
 

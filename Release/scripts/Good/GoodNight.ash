@@ -2,8 +2,8 @@ import <GoodLib.ash>;
 
 void main()
 {
-	//if ((my_adventures() > 2) || (my_inebriety() > inebriety_limit()))
-	//	abort("Either too drunk or adventures left...");
+	if ((my_adventures() > 2) || (my_inebriety() > inebriety_limit()))
+		abort("Either too drunk or adventures left...");
 
 	if (isFarming()) {
 		use_familiar($familiar[Stooper]);

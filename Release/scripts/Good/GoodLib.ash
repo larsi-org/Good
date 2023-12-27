@@ -221,6 +221,15 @@ void stash_currency()
 	put_all_display($item[Freddy Kruegerand]);
 }
 
+void uploadStats()
+{
+	if (isFarming()) {
+		call_script("av-snapshot");
+		call_script("PL-skills");
+	}
+
+}
+
 void buff_crimbo2020()
 {
 	int nb = item_amount($item[donated booze]);

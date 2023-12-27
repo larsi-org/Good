@@ -359,5 +359,7 @@ void main()
 	clean_mushrooms();
 	discard_instant_karma();
 
+	uploadStats();
+
 	print("Done!", "blue");
 }

@@ -160,12 +160,8 @@ void setDefaultChoices()
 
 void main()
 {
-	if (isFarming()) {
-		call_script("av-snapshot");
-		call_script("PL-skills");
-	}
-
 	setDefaultChoices();
+	uploadStats();
 
 	call_script("Detective Solver");
 

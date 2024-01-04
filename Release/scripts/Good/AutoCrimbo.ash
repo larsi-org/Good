@@ -28,16 +28,13 @@ void main()
 	cli_execute("maximize item, +equip lucky gold ring, +equip combat lover's locket, +equip Elf Guard patrol cap, +equip Elf Guard hotpants, +equip Elf Guard insignia (private), +equip Crimbuccaneer lantern, -tie");
 	//cli_execute("maximize item, +equip lucky gold ring, +equip combat lover's locket, +equip Crimbuccaneer tricorn, +equip Crimbuccaneer breeches, +equip Crimbuccaneer fledges (mint), +equip Crimbuccaneer lantern, -tie");
 
-	//if (!outfit("Crimbo")) print("Failed equip 'Crimbo'.", "red");
-	//use_familiar($familiar[Yule Hound]);
-
 	// chew
 	if (isFarming()) {
 		//call_script("synthesis * meat");
 		call_script("synthesis * item");
 	}
 
-	while (my_adventures() > 192) {
+	while (my_adventures() > 2) {
 		maintainBuffs();
 
 		if (have_effect($effect[Beaten Up]) > 0) {

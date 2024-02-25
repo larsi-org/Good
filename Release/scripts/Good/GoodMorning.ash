@@ -155,6 +155,7 @@ void doTunnel()
 
 void setDefaultChoices()
 {
+	set_choice(1106, 3, "1106");
 	set_choice(1107, 1, "1107");
 	set_choice(1108, 2, "1108");
 }

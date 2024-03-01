@@ -20,5 +20,3 @@ void main()
 
 	print("Done!", "blue");
 }
-Ottohasagreatlife!2
-1234567890123456789
